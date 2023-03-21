@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a22a56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+form {
+  color: white;
+  padding: 40px 60px;
+  background-color: #741f3e;
+}
+
+form > button,
+.result > button {
+  width: 100%;
+  outline: none;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+}
+
+.grid > * {
+  margin-bottom: 15px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+  color: white;
+  background-color: #741f3e;
+  margin-top: 10px;
+}
+
+.result > * {
+  margin-bottom: 10px;
+}
